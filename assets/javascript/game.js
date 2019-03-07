@@ -21,10 +21,12 @@ $("#crystal-one").on("click", function(){
         userScore = parseInt(userScore + crystalOneValue);
         console.log("first click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     } else {
         userScore = parseInt(userScore + crystalOneValue);
         console.log("second click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     }
 });
 
@@ -35,10 +37,12 @@ $("#crystal-two").on("click", function(){
         userScore = parseInt(userScore + crystalTwoValue);
         console.log("first click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     } else {
         userScore = parseInt(userScore + crystalTwoValue);
         console.log("second click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     }
 });
 
@@ -49,10 +53,12 @@ $("#crystal-three").on("click", function(){
         userScore = parseInt(userScore + crystalThreeValue);
         console.log("first click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     } else {
         userScore = parseInt(userScore + crystalThreeValue);
         console.log("second click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     }
 });
 
@@ -63,13 +69,46 @@ $("#crystal-four").on("click", function(){
         userScore = parseInt(userScore + crystalFourValue);
         console.log("first click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     } else {
         userScore = parseInt(userScore + crystalFourValue);
         console.log("second click " + userScore);
         $("#user-score").text(userScore);
+        scoreCompare();
     }
 });
 
+function scoreCompare(){
+    if(userScore > compScore) {
+        $("#result-message").text("Sorry you lose");
+        losses++;
+        $("#losses").text(losses);
+        crystalOneValue = "";
+        crystalTwoValue = "";
+        crystalThreeValue = "";
+        crystalFourValue = "";
+        userScore = "";
+            compScore = "";
+        $("#user-score").text("");
+        // $("#comp-score").text("");
+            // compScore = (Math.floor(Math.random() * (120 - 19 + 1)) + 19);
+        // $("#comp-score").text(compScore);
+    } else if (userScore === compScore) {
+        $("#result-message").text("You WIN!");
+        wins++;
+        $("#wins").text(wins);
+        crystalOneValue = "";
+        crystalTwoValue = "";
+        crystalThreeValue = "";
+        crystalFourValue = "";
+        userScore = "";
+            compScore = "";
+        $("#user-score").text("");
+        // $("#comp-score").text("");
+            // compScore = (Math.floor(Math.random() * (120 - 19 + 1)) + 19);
+        // $("#comp-score").text(compScore);
+    } 
+};
 
 
 
