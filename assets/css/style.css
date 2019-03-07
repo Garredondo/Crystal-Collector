@@ -1,0 +1,16 @@
+html, body {
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/whitediamond.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.col-sm-6 {
+    background-color: #feffe5;
+}
+
+#crystal-one,
+#crystal-two,
+#crystal-three,
+#crystal-four {
+   height: 100px;
+   width: 100px;
+}

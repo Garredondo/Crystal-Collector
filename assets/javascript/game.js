@@ -11,6 +11,7 @@ var crystalThreeValue = "";
 var crystalFourValue = "";
 
 //display compScore
+
 $("#comp-score").text(compScore);
 
 //Function so that on-click a random number (1-12) is generated if the value is 0, if it has a value greater than 0 then don't run the randomizer and just add the value to the userScore.
@@ -88,7 +89,7 @@ function scoreCompare(){
         crystalThreeValue = "";
         crystalFourValue = "";
         userScore = "";
-            compScore = "";
+            // compScore = "";
         $("#user-score").text("");
         // $("#comp-score").text("");
             // compScore = (Math.floor(Math.random() * (120 - 19 + 1)) + 19);
@@ -102,7 +103,7 @@ function scoreCompare(){
         crystalThreeValue = "";
         crystalFourValue = "";
         userScore = "";
-            compScore = "";
+            // compScore = "";
         $("#user-score").text("");
         // $("#comp-score").text("");
             // compScore = (Math.floor(Math.random() * (120 - 19 + 1)) + 19);
