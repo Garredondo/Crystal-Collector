@@ -1,10 +1,32 @@
 html, body {
-    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/whitediamond.png") no-repeat center center fixed;
+    background: url("https://png2.kisspng.com/sh/ce724274883a261225ef09de4bccd996/L0KzQYm3UsA3N5D0fZH0aYP2gLBuTf1qdppzf597b4nkfMXCTfZzbZYye9N7dHByfn7wjPx2e6V3eeZyb36whLnsTfNifpYygdC2dHjoPb72lf51aZpzi58AYUe8c7a7U8FkO2ZqSpC5NUO1RomAVsE2OWgAS6Q5OUm0QYa9TwBvbz==/kisspng-mining-royalty-free-cartoon-illustration-the-cave-in-the-mountains-5a79ce431c35e2.0532687615179320991156.png") no-repeat center center fixed;
     background-size: cover;
 }
 
-.col-sm-6 {
-    background-color: #feffe5;
+.wrapper {
+    font-weight: 900;
+    font-family: 'Sniglet', cursive;
+    color: #2F22FF;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    margin-top: 20px;
+}
+
+#title {
+    font-size: 50px;
+    background-color: wheat;
+}
+
+#main-content {
+    background-color: rgb(242, 232, 212);
+}
+
+#ins {
+    text-align: justify;
 }
 
 #crystal-one,
@@ -13,4 +35,18 @@ html, body {
 #crystal-four {
    height: 100px;
    width: 100px;
+   margin: 0 auto;
 }
+
+#comp-score,
+#user-score,
+#result-message,
+#wins,
+#losses {
+    margin: 10px auto;
+}
+
+#reset-button {
+    margin-bottom: 20px;
+}
+

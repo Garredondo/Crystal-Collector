@@ -1,88 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
-<!-- my CSS -->
+    <!-- my CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!-- this next code.jquery has to go before  -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<!-- above was pulled up from below -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
-<!-- bootstrap javascript -->
-<!-- this was the original spot of the code.jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<!-- jquery -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- this next code.jquery has to go before  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- above was pulled up from below -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap javascript -->
+    <!-- this was the original spot of the code.jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- jquery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- my javascript -->
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+    <!-- my javascript -->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row" id="header">
                 <div class="col-sm-12">
-                    <h1>instructions</h1>
+                    <h1 id="title">Crystal Collector</h1>
                 </div>
             </div>
 
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div style="margin-top: 100px">
-                            <!-- intentionally left blank -->
-                        </div>
-                        <div>
-                            <img src="http://pngimg.com/uploads/ruby/ruby_PNG36.png" alt="ruby" id="crystal-one">
-                        </div>
-                        <br>
-                        <div>
-                            <img src="http://pngimg.com/uploads/sapphire/sapphire_PNG21.png" alt="sapphire" id="crystal-two">
-                        </div>
-                        <br>
-                        <div>
-                            <img src="http://placehold.it/100x100" alt="image" id="crystal-three">
-                        </div>
-                        <br>
-                        <div>
-                            <img src="http://placehold.it/100x100" alt="image" id="crystal-four">
-                        </div>
-                        <div style="margin-bottom: 20px">
-                            <!-- intentionally left blank -->
-                        </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div style="margin-top: 50px">
+                        <!-- intentionally left blank -->
                     </div>
-                    <div class="col-sm-6">
-                        <div style="margin-top: 100px">
-                            <!-- intentionally left blank -->
+                    <div class="row">
+                        <img src="http://pngimg.com/uploads/ruby/ruby_PNG36.png" alt="ruby" id="crystal-one">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="http://pngimg.com/uploads/sapphire/sapphire_PNG21.png" alt="sapphire"
+                            id="crystal-two">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="http://pngimg.com/uploads/emerald/emerald_PNG22298.png" alt="emerald"
+                            id="crystal-three">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="https://png2.kisspng.com/sh/b1c5566d85be72f917df1cf075b1f5f7/L0KzQYi4UcI4N2FqT5GAYUHmSbLoWcA5OWI9T5CAOEezQoG3VcE2OWI9SqY5NEGzQ4S4TwBvbz==/5a1c9aa9081187.5870200515118240410331.png"
+                            alt="diamond" id="crystal-four">
+                    </div>
+                    <div style="margin-bottom: 20px">
+                        <!-- intentionally left blank -->
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="container" id="main-content">
+                        <div style="margin-top: 50px">
+                        <!-- intentionally left blank -->
                         </div>
                         <div>
-                            <h3>Computer score</h3>
+                            <p id="ins">Collect as many crystals as the miner to win, but collect too many and you'll have to go again!</p>
+                        </div>
+                        <div>
+                            <h3>Miner's Crystals</h3>
                             <p id="comp-score"></P>
                         </div>
                         <div>
-                            <h3>Your Score</h3>
+                            <h3>Your Crystals</h3>
                             <p id="user-score"></p>
                         </div>
                         <div>
-                            <h3>Game Result</h3>
+                            <h4>Game Result</h4>
                             <p id="result-message"></p>
                         </div>
                         <div>
-                            <h3>Wins</h3>
+                            <h4>Wins</h4>
                             <p id="wins"></p>
                         </div>
                         <div>
-                            <h3>Losses</h3>
+                            <h4>Losses</h4>
                             <p id="losses"></p>
+                        </div>
+                        <div>
+                            <button id="reset-button">Go Again</button>
                         </div>
                     </div>
                 </div>
-            
+            </div>
+
         </div>
     </div>
 </body>
+
 </html>
+
+
